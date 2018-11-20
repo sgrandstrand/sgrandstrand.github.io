@@ -1,0 +1,159 @@
+/* h1 {
+font‑size: 30 ;
+} */
+
+body {
+    background-color: whitesmoke;
+}
+/* this might not be needed as container-fluid has some padding as well*/
+.content  {
+    padding-top: 70px;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+.navbar-default {
+    background-color: rosybrown; border: none;
+}
+.navbar .navbar-nav li a {
+    color: whitesmoke;
+}
+.navbar .navbar-nav li a:hover {
+    color: slategrey; 
+}
+.navbar .navbar-brand {
+    color: whitesmoke;
+}
+.box {
+    height: 350px; 
+    width: 300px;
+    overflow: hidden; 
+    margin: 0 auto;
+    display: block;
+    border-style: solid;
+    border-width: medium;
+    border-color: dimgray; 
+}
+
+.caption h3 {
+    color: black
+}
+
+a:hover {
+    color: rosybrown;
+}
+
+/* This is used to add spacing between the sections */
+@media (min-width: 768px) {  
+  header .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+  } 
+
+}
+
+#portfolio .portfolio-item {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    
+    
+} 
+
+#portfolio .portfolio-item .caption {
+        text-align: center;
+    }   
+    
+} 
+#portfolio * {
+    z-index: 2;
+}
+#portfolio {
+    background-color: whitesmoke;
+}
+#topsection {
+    background-color: slategray/* #A5AD7A; /* #92717C;   #867878; */
+    
+}
+#headername {
+    color:whitesmoke;
+    text-align: center;
+    font-size: 5.5vw;
+    font-family: 'Arial Black', Arial, sans-serif;
+    padding-top: 50px;
+    
+} 
+#graphic {
+    width: 100vw;
+    height: auto;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    padding-top: 30px; 
+    
+}
+#resumephoto {
+    height: 400px;
+    width: 350px;
+    object-fit: fill;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.resume-title {
+    padding-bottom: 20px;
+    color: whitesmoke;
+    
+}
+.content .bio {
+    font-family: sans-serif; 
+    font-size: 1.25em; 
+    padding-top: 30px;
+    text-indent: 30pt;
+}
+
+#abouttitle {
+    padding-left: 125px;
+    padding-bottom: 15px;
+    
+}
+#aboutphoto {
+    height: 400px;
+    width: 350px;
+    object-fit: fill;
+    padding-left: 25px;
+}
+
+#aboutpics {
+    height: 275px;
+    width: 350px;
+    object-fit: fill;
+    padding-right: 25px;
+    padding-left: 10px;
+}
+footer {
+    padding-top: 25px;
+}
+
+.glyphicon-globe {
+    padding-right: 30px;
+    color: rosybrown;
+    padding-top: 15px;
+}
+.custom-resume {
+    text-align: center; 
+}
+.resume-glyph {
+    padding-right: 5px;
+}
+.custom-color {
+    background-color: slategrey;
+}
+.modaltext{
+    padding-top: 15px;
+}
+
