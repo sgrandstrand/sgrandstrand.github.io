@@ -5,32 +5,39 @@ font‑size: 30 ;
 body {
     background-color: whitesmoke;
 }
+
 /* this might not be needed as container-fluid has some padding as well*/
-.content  {
+.content {
     padding-top: 70px;
     font-family: 'Arial Black', Arial, sans-serif;
 }
+
 .navbar-default {
-    background-color: rosybrown; border: none;
+    background-color: rosybrown;
+    border: none;
 }
+
 .navbar .navbar-nav li a {
     color: whitesmoke;
 }
+
 .navbar .navbar-nav li a:hover {
-    color: slategrey; 
+    color: slategrey;
 }
+
 .navbar .navbar-brand {
     color: whitesmoke;
 }
+
 .box {
-    height: 350px; 
+    height: 350px;
     width: 300px;
-    overflow: hidden; 
+    overflow: hidden;
     margin: 0 auto;
     display: block;
     border-style: solid;
     border-width: medium;
-    border-color: dimgray; 
+    border-color: dimgray;
 }
 
 .caption h3 {
@@ -41,13 +48,17 @@ a:hover {
     color: rosybrown;
 }
 
+img:hover {
+    opacity: .5;
+}
+
 /* This is used to add spacing between the sections */
-@media (min-width: 768px) {  
-  header .container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-  } 
+@media (min-width: 768px) {
+    header .container-fluid {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+    }
 
 }
 
@@ -57,44 +68,52 @@ a:hover {
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
-    
-    
-} 
+
+
+}
 
 #portfolio .portfolio-item .caption {
-        text-align: center;
-    }   
-    
-} 
+    text-align: center;
+}
+
+}
+
 #portfolio * {
     z-index: 2;
 }
+
 #portfolio {
     background-color: whitesmoke;
 }
+
 #topsection {
-    background-color: slategray/* #A5AD7A; /* #92717C;   #867878; */
-    
+    background-color: slategray
+        /* #A5AD7A; /* #92717C;   #867878; */
+
 }
+
 #headername {
-    color:whitesmoke;
+    color: whitesmoke;
     text-align: center;
     font-size: 5.5vw;
     font-family: 'Arial Black', Arial, sans-serif;
     padding-top: 50px;
-    
-} 
+    text-shadow: 3px 2px black;
+
+}
+
 #graphic {
     width: 100vw;
     height: auto;
-    max-width: 250px;
+    max-width: 275px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 50%;
-    padding-top: 30px; 
-    
+    padding-top: 30px;
+
 }
+
 #resumephoto {
     height: 400px;
     width: 350px;
@@ -107,11 +126,12 @@ a:hover {
 .resume-title {
     padding-bottom: 20px;
     color: whitesmoke;
-    
+
 }
+
 .content .bio {
-    font-family: sans-serif; 
-    font-size: 1.25em; 
+    font-family: sans-serif;
+    font-size: 1.25em;
     padding-top: 30px;
     text-indent: 30pt;
 }
@@ -119,8 +139,9 @@ a:hover {
 #abouttitle {
     padding-left: 125px;
     padding-bottom: 15px;
-    
+
 }
+
 #aboutphoto {
     height: 400px;
     width: 350px;
@@ -135,6 +156,7 @@ a:hover {
     padding-right: 25px;
     padding-left: 10px;
 }
+
 footer {
     padding-top: 25px;
 }
@@ -144,16 +166,25 @@ footer {
     color: rosybrown;
     padding-top: 15px;
 }
+
 .custom-resume {
-    text-align: center; 
+    text-align: center;
 }
+
 .resume-glyph {
     padding-right: 5px;
 }
+
 .custom-color {
     background-color: slategrey;
 }
-.modaltext{
+
+.modaltext {
     padding-top: 15px;
 }
 
+.portheader {
+    color: rosybrown;
+    text-align: center;
+    font-weight: bold;
+}

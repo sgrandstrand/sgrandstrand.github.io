@@ -1,337 +1,471 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href= "css/Style.css">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Style.css">
 
 
-        <title>Sarah Grandstrand Portfolio GIS Environmental Biologist</title>
-    </head>
-    <body>  
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" 
-                            class="navbar-toggle collapsed" 
-                            data-toggle="collapse" 
-                            data-target="#collapsemenu" 
-                            aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Sarah Grandstrand</a>
+    <title>Sarah Grandstrand Portfolio GIS Environmental Biologist</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Sarah Grandstrand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsemenu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active"><a href="index.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- First section of portfolio -->
+    <header>
+        <div class="container-fluid" id="topsection">
+            <div class="row">
+                <div class="col-sm-6" id="headername">
+                    <p>Sarah</p>
+                    <p>Grandstrand</p>
                 </div>
-                <div class="collapse navbar-collapse" id="collapsemenu">
-                    <ul class="nav navbar-nav pull-right">
-                        <li class="active"><a href="index.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="Resume.html">Resume</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul>
+                <div class="col-sm-6 col-lg-4" id="graphic">
+                    <p> <img src="images/graphic.svg" alt="graphic" class="img-responsive">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Maps and Work I've done -->
+
+    <section id="portfolio">
+        <div class="container">
+            <!-- Static Maps -->
+            <div class="row">
+                <h2 class="portheader"> Static Maps </h2>
+
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="#PortModal5" data-toggle="modal">
+                        <div class="box">
+                            <img src="images/BikeRouteCover.png" alt="Terrain Map of Bike Route" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>New Zealand Bike Race</h3>
+                        </div>
+                    </a>
+                    <p align="center">A terrain map of a bike race through New Zealand</p>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="#PortModal4" data-toggle="modal">
+                        <div class="box">
+                            <img src="images/InfographicCover.png" alt="Infographic" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Longform Infographic</h3>
+                        </div>
+                    </a>
+                    <p align="center">An informative look at the Renewable Portfolio Standards for each state</p>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#PortModal3" data-toggle="modal">
+                        <div class="box">
+                            <img src="images/MapbookCoverCover.png" alt="Mapbook" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Mapbook</h3>
+                        </div>
+                    </a>
+                    <p align="center">A mapbook of fiber internet network coverage</p>
                 </div>
 
             </div>
-        </nav>
+            <!--Static Map end -->
 
-        <!-- First section of portfolio -->
-        <header>  
-            <div class="container-fluid" id="topsection"> 
-                <div class="row" align="center">         
-                    <div class="col-sm-6" id="headername">
-                        <p>Sarah</p>
-                        <p>Grandstrand</p>
-                    </div>
-                    <div class="col-sm-6" id="graphic">
-                        <p> <img src="images/graphic1.png"  alt="graphic" class="img-responsive">
-                        </p>
-                    </div>
+            <!-- Interactive Map Start -->
+            <div class="row">
+                <h2 class="portheader"> Interactive Maps </h2>
+
+
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="https://sgrandstrand.github.io/FL_NAS/" target="_blank">
+                        <div class="box">
+                            <img src="images/FL_NAS.png" alt="Map of Invasive Species" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Aquatic Invasive Species in Florida </h3>
+                        </div>
+                    </a>
+                    <p align="center">A responsive and interactive map showing the distribution of non-indigenous aquatic species in Florida.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="https://sgrandstrand.github.io/leaflet-lab/leaflet-lab/" target="_blank">
+                        <div class="box">
+                            <img src="images/NP.png" alt="Map of National Parks" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>National Park Visitors Per Month </h3>
+                        </div>
+                    </a>
+                    <p align="center">A proportional symbol map of the number of visitors to every state park per month using Leaflet and jQuery. </p>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="https://sgrandstrand.github.io/Geog575Lab2/" target="_blank">
+                        <div class="box">
+                            <img src="images/wine.png" alt="Map of Italian Wine by Region" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Italian Wine by Region</h3>
+                        </div>
+                    </a>
+                    <p align="center">A responsive and interactive map and graph of wine distribution per region in Italy using D3.</p>
+                </div>
+
+                <div class="clearfix" hidden-sm></div> <!-- this saves the graphic from looking off, skipping columns could also do visible-sm-block --->
+
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="https://api.mapbox.com/styles/v1/sgrandstrand/cjpe6xs1t0vv32rpbl920emtp.html?fresh=true&title=true&access_token=pk.eyJ1Ijoic2dyYW5kc3RyYW5kIiwiYSI6ImNqY3BtMm52MjJyZWsycXBmMDZremxsN3EifQ.3HVgf9jrNbmCSBBBlp5zlQ#1.89/39.22/-28.89" target="_blank">
+                        <div class="box">
+                            <img src="images/sherlock.png" alt="Sherlock Holmes Themed Map" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Sherlock Holmes Inspired Map Style</h3>
+                        </div>
+                    </a>
+                    <p align="center">A map based on style themes from movies and TV shows of Sherlock Holmes using Mapbox. When you zoom in on U.S. cities badges represent police stations and each magnifying glass represents an unsolved homicide.</p>
                 </div>
 
             </div>
-        </header>
 
-        <!-- Maps and Work I've done -->
+            <!--End Interactive Maps -->
 
-        <section id="portfolio"> 
-            <div class="container"> 
-                <div class="row">   
+            <!-- Research Work Start -->
+            <div class="row">
+                <h2 class="portheader"> Research Based Work </h2>
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="#PortModal9" data-toggle="modal">
+                        <div class="box">
+                            <img src="images/geog574paper.png" alt="Map of Invasive Species" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Suitability Analysis of Wind and Solar Farms in Oregon, USA</h3>
+                        </div>
+                    </a>
+                    <p align="center">An analysis using GIS databases and ArcGIS products to model and determine ideal location of wind and solar farms across Oregon.</p>
+                </div>
 
-                    <div class="col-sm-6 col-md-4 portfolio-item">     
-                        <a href="#PortModal1" data-toggle="modal">
-                            <div class="box">      
-                                <img src= "images/BikeRouteCover.png" alt= "Terrain Map of Bike Route" class="img-responsive">
-                            </div>
-                            <div class = "caption">  
-                                <h3>New Zealand Bike Race</h3>
-                            </div>
-                        </a>
-                        <p align="center">A terrain map of a bike race through New Zealand</p> 
-                    </div>  
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="#PortModal2" data-toggle="modal">
+                        <div class="box">
+                            <img src="images/SETACPosterCover.png" alt="Research" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Developmental Toxicity of Triclosan on Zebrafish</h3>
+                        </div>
+                    </a>
+                    <p align="center">A poster and research paper on the environmental contaminent, Triclosan and its developmental toxicity on zebrafish larvae</p>
+                </div>
 
 
-                    <div class="col-sm-6 col-md-4 portfolio-item">     
-                        <a href="#PortModal2"data-toggle="modal">
-                            <div class="box"> 
-                                <img src= "images/InfographicCover.png" alt= "Infographic" class="img-responsive">
-                            </div>
-                            <div class="caption">
-                                <h3>Longform Infographic</h3>  
-                            </div>
-                        </a>
-                        <p align="center">An informative look at the Renewable Portfolio Standards for each state</p>
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a href="#PortModal1" data-toggle="modal">
+                        <div class="box">
+                            <img src="images/UrbanSprawlCover.png" alt="Poster" class="img-responsive">
+                        </div>
+                        <div class="caption">
+                            <h3>Evaluation of Urban Sprawl in Carver County, MN </h3>
+                        </div>
+                    </a>
+                    <p align="center">A comparison of Landsat imagery to determine the extent of Urban Sprawl in Carver County, MN</p>
+                </div>
+            </div> <!-- Reserach Work End -->
+        </div> <!-- Container end -->
+    </section>
+
+    <!-- Modals for Portfolio -->
+
+    <section>
+        <!--Modal 5 -->
+        <div class="modal fade" id="PortModal5" tabindex="-1" role="dialog" aria-labeledby="modalLabel1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="modalLabel5">Terrain Map: New Zealand Bike Race</h3>
                     </div>
-
-
-                    <div class="col-md-4 col-sm-6 portfolio-item">     
-                        <a href="#PortModal3" data-toggle="modal">
-                            <div class="box">   
-                                <img src= "images/MapbookCoverCover.png" alt= "Mapbook" class="img-responsive">
-                            </div>
-                            <div class="caption"> 
-                                <h3>Mapbook</h3>
-                            </div>
-                        </a>
-                        <p align="center">A mapbook of fiber internet network coverage</p>
+                    <div class="modal-body">
+                        <img src="images/BikeRoute.png" alt="Terrain Map" class="img-responsive">
+                        <p class="modaltext"> This was created in a design course taken at the University of Wisconsin-Madison as part of my master's degree. The point of the project was to create a bike race over 21 days with varying terrain somewhere in the world. I choose New Zealand. I used hillshades and land cover data in ArcMap and Photoshop to manipulate the overlay. Then used Illustrator to customize the vector data.</p>
+                        <ul class="modaltext"><u> Tools Used</u>
+                            <li> ArcMap</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li> Google MyMaps</li>
+                        </ul>
                     </div>
-
-                    <div class="clearfix" hidden-sm></div>  <!-- this saves the graphic from looking off, skipping columns could also do visible-sm-block --->
-
-                    <div class="col-sm-6 col-md-4 portfolio-item">    
-                        <a href="#PortModal4" data-toggle="modal">
-                            <div class="box">    
-                                <img src= "images/SETACPosterCover.png" alt= "Research" class="img-responsive">
-                            </div>
-                            <div class="caption">
-                                <h3>Developmental Toxicity of Triclosan on Zebrafish</h3>
-                            </div>
-                        </a>
-                        <p align="center">A poster and research paper on the environmental contaminent, Triclosan and its developmental toxicity on zebrafish larvae</p>
+                    <!--modal body-->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">
+                            Close
+                        </button>
                     </div>
+                    <!--modal-footer -->
+                </div>
+                <!--modal content -->
+            </div>
+            <!--modal-dialog -->
+        </div> <!-- modal class-->
+        <!--End of Modal 5 -->
 
-
-                    <div class="col-sm-6 col-md-4 portfolio-item">   
-                        <a href="#PortModal5" data-toggle="modal">
-                            <div class="box">    
-                                <img src= "images/UrbanSprawlCover.png" alt= "Poster" class="img-responsive">
-                            </div>
-                            <div class="caption"> 
-                                <h3>Evaluation of Urban Sprawl in Carver County, MN </h3>
-                            </div>
-                        </a>
-                        <p align="center">A comparison of Landsat imagery to determine the extent of Urban Sprawl in Carver County, MN</p>
+        <!--Modal 4 -->
+        <div class="modal fade" id="PortModal4" tabindex="-1" role="dialog" aria-labeledby="modalLabel2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="modalLabel4">Longform Infographic</h3>
                     </div>
-                </div> <!--row end -->
-            </div>   
-        </section>  
+                    <div class="modal-body">
+                        <img src="images/LongformInfographic.png" alt="Infographic" class="img-responsive">
+                        <p class="modaltext"> This longform infographic was created in a design course taken at the University of Wisconsin-Madison as part of my master's degree. The point of the project was to create a visual story using bivariate data. I used ArcMap to create the central map and Illustrator to create all the graphics and graph.</p>
+                        <ul class="modaltext"><u> Tools Used</u>
+                            <li> ArcMap</li>
+                            <li>Illustrator</li>
+                        </ul>
+                    </div>
+                    <!--modal body-->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">
+                            Close
+                        </button>
+                    </div>
+                    <!--modal-footer -->
+                </div>
+                <!--modal content -->
+            </div>
+            <!--modal-dialog -->
+        </div> <!-- modal class-->
 
-        <!-- Modals for Portfolio -->
+        <!--End of Modal 4 -->
 
-        <!--Modal 1 --> 
-        <section>    
-            <div class ="modal fade" id="PortModal1" tabindex="-1" role="dialog" aria-labeledby="modalLabel1" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3 class="modal-title" id="modalLabel1">Terrain Map: New Zealand Bike Race</h3>
+        <!--Modal 3 -->
+        <div class="modal fade" id="PortModal3" tabindex="-1" role="dialog" aria-labeledby="modalLabel3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="modalLabel3">Mapbook</h3>
+                    </div>
+                    <div class="modal-body">
+                        <!--Carousel inside modal-->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/MapbookCover.png" alt="Mapbook Cover" class="img-responsive">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/MapbookPage64.png" alt="Mapbook Page" class="img-responsive">
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/MapbookPg57.png" alt="Mapbook Page" class="image-responsive">
+                                </div>
+
+                            </div>
+                            <!--carousel inner-->
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-                        <div class="modal-body">  
-                            <img src="images/BikeRoute.png" alt="Terrain Map" class="img-responsive">
-                            <p class="modaltext"> This was created in a design course taken at the University of Wisconsin-Madison as part of my master's degree. The point of the project was to create a bike race over 21 days with varying terrain somewhere in the world.  I choose New Zealand. I used hillshades and land cover data in ArcMap and Photoshop to manipulate the overlay. Then used Illustrator to customize the vector data.</p>
-                            <ul class="modaltext"><u> Tools Used</u> 
-                                <li> ArcMap</li>
-                                <li>Photoshop</li>
-                                <li>Illustrator</li>
-                                <li> Google MyMaps</li>
-                            </ul>
-                        </div> <!--modal body-->
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="btn btn-default">
-                                Close
-                            </button>
-                        </div> <!--modal-footer -->
-                    </div> <!--modal content -->
-                </div> <!--modal-dialog -->
-            </div> <!-- modal class-->
-            <!--End of Modal 1 -->    
+                        <!--carousel slide-->
 
-            <!--Modal 2 -->    
-            <div class ="modal fade" id="PortModal2" tabindex="-1" role="dialog" aria-labeledby="modalLabel2" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3 class="modal-title" id="modalLabel2">Longform Infographic</h3>
-                        </div>
-                        <div class="modal-body">  
-                            <img src="images/LongformInfographic.png" alt="Infographic" class="img-responsive">
-                            <p class="modaltext"> This longform infographic was created in a design course taken at the University of Wisconsin-Madison as part of my master's degree. The point of the project was to create a visual story using bivariate data. I used ArcMap to create the central map and Illustrator to create all the graphics and graph.</p>
-                            <ul class="modaltext"><u> Tools Used</u> 
-                                <li> ArcMap</li>
-                                <li>Illustrator</li>
-                            </ul>
-                        </div> <!--modal body-->
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="btn btn-default">
-                                Close
-                            </button>
-                        </div> <!--modal-footer -->
-                    </div> <!--modal content -->
-                </div> <!--modal-dialog -->
-            </div> <!-- modal class-->
+                        <p class="modaltext">As an intern for U.S. Internet I was tasked with creating a mapbook for their maintenance crews. The company had a network of fiber cables in the ground and the maintenance crews would access them via handholes. I created a basemap, grid, used the tool data-driven pages, and adjusted maplex labels to create an easy to read map. </p>
+                        <ul class="modaltext"><u> Tools Used</u>
+                            <li> ArcMap</li>
+                        </ul>
 
-            <!--End of Modal 2 -->  
+                    </div>
+                    <!--modal body-->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">
+                            Close
+                        </button>
+                    </div>
+                    <!--modal-footer -->
+                </div>
+                <!--modal content -->
+            </div>
+            <!--modal-dialog -->
+        </div> <!-- modal class-->
 
-            <!--Modal 3 -->    
-            <div class ="modal fade" id="PortModal3" tabindex="-1" role="dialog" aria-labeledby="modalLabel3" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3 class="modal-title" id="modalLabel3">Mapbook</h3>
-                        </div>
-                        <div class="modal-body"> 
-                            <!--Carousel inside modal-->
-                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                                </ol>
+        <!--End of Modal 3 -->
 
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img src="images/MapbookCover.png" alt="Mapbook Cover" class="img-responsive">
-                                    </div>
+        <!--Modal 2 -->
+        <div class="modal fade" id="PortModal2" tabindex="-1" role="dialog" aria-labeledby="modalLabel4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="modalLabel2">Developmental Toxicity of Triclosan on Zebrafish</h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/SETACPoster.png" alt="Toxicity Poster" class="img-responsive">
+                        <p class="modaltext"> I conducted research as an undergraduate at the University of Wisconsin - La Crosse. My research was evaluating the developmental toxicity of Triclosan (TCS) on zebrafish. The chemical was previously shown to be harmful to zebrafish larvae but was also shown in a different study to absorb to dissolved organic carbon (DOC). My hypothesis was that co-exposure to TCS in DOC would reduce TCS's bioavailability and therefore the toxicity to zebrafish larvae. </p>
+                        <p class="modaltext">My study showed that there was not a significant change in toxic effects however; there was a dose-response when TCS and DOC were present. This research led to a publication in the journal <a href="https://www.ncbi.nlm.nih.gov/pubmed/27045765">Zebrafish.</a> As well as several conference presentations at the National Conference for Undergraduate Research and the Society of Environmental Toxicology and Chemistry.</p>
+                        <a href="images/SETAC%20Poster_Sarah.pdf" class="btn btn-primary" style="float:right;" target="_blank">Open PDF</a>
+                        <ul class="modaltext"><u>Tools Used</u>
+                            <li> Excel</li>
+                            <li> Photoshop</li>
+                            <li> SPSS</li>
 
-                                    <div class="item">
-                                        <img src="images/MapbookPage64.png" alt="Mapbook Page" class="img-responsive">
-                                    </div>
-
-                                    <div class="item">
-                                        <img src="images/MapbookPg57.png" alt="Mapbook Page" class="image-responsive">
-                                    </div>
-
-                                </div> <!--carousel inner-->
-
-                                <!-- Left and right controls -->
-                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div> <!--carousel slide-->
-
-                            <p class="modaltext">As an intern for U.S. Internet I was tasked with creating a mapbook for their maintenance crews. The company had a network of fiber cables in the ground and the maintenance crews would access them via handholes. I created a basemap, grid, used the tool data-driven pages, and adjusted maplex labels to create an easy to read map. </p>
-                            <ul class="modaltext"><u> Tools Used</u> 
-                                <li> ArcMap</li>
-                            </ul>
-
-                        </div> <!--modal body-->
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="btn btn-default">
-                                Close
-                            </button>
-                        </div> <!--modal-footer -->
-                    </div> <!--modal content -->
-                </div> <!--modal-dialog -->
-            </div> <!-- modal class-->
-
-            <!--End of Modal 3 --> 
-
-            <!--Modal 4 -->    
-            <div class ="modal fade" id="PortModal4" tabindex="-1" role="dialog" aria-labeledby="modalLabel4" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3 class="modal-title" id="modalLabel4">Developmental Toxicity of Triclosan on Zebrafish</h3>
-                        </div>
-                        <div class="modal-body">  
-                            <img src="images/SETACPoster.png" alt="Toxicity Poster" class="img-responsive">   
-                            <p class="modaltext"> I conducted research as an undergraduate at the University of Wisconsin - La Crosse. My research was evaluating the developmental toxicity of Triclosan (TCS) on zebrafish. The chemical was previously shown to be harmful to zebrafish larvae but was also shown in a different study to absorb to dissolved organic carbon (DOC). My hypothesis was that co-exposure to TCS in DOC would reduce TCS's bioavailability and therefore the toxicity to zebrafish larvae. </p>
-                            <p class="modaltext">My study showed that there was not a significant change in toxic effects however; there was a dose-response when TCS and DOC were present. This research led to a publication in the journal <a href="https://www.ncbi.nlm.nih.gov/pubmed/27045765">Zebrafish.</a> As well as several conference presentations at the National Conference for Undergraduate Research and the Society of Environmental Toxicology and Chemistry.</p>
-                            <a href="images/SETAC%20Poster_Sarah.pdf" class="btn btn-primary" style ="float:right;" target="_blank">Open PDF</a>    
-                            <ul class="modaltext"><u>Tools Used</u> 
-                                <li> Excel</li>
-                                <li> Photoshop</li>
-                                <li> SPSS</li>
-
-                            </ul>
+                        </ul>
 
 
-                        </div> <!--modal body-->
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="btn btn-default">
-                                Close
-                            </button>
-                        </div> <!--modal-footer -->
-                    </div> <!--modal content -->
-                </div> <!--modal-dialog -->
-            </div> <!-- modal class-->
+                    </div>
+                    <!--modal body-->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">
+                            Close
+                        </button>
+                    </div>
+                    <!--modal-footer -->
+                </div>
+                <!--modal content -->
+            </div>
+            <!--modal-dialog -->
+        </div> <!-- modal class-->
 
-            <!--End of Modal 4 -->   
+        <!--End of Modal 2 -->
 
-            <!--Modal 5 -->    
-            <div class ="modal fade" id="PortModal5" tabindex="-1" role="dialog" aria-labeledby="modalLabel5" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h3 class="modal-title" id="modalLabel5">Evaluation of Urban Sprawl in Carver County, MN</h3>
-                        </div>
-                        <div class="modal-body">  
-                            <img src="images/UrbanSprawlposter.png" alt="" class="img-responsive">   
-                            <p class="modaltext"> This poster was created as part of a project in Remote Sensing taken at University of Wisconsin - La Crosse. My project compared the land use of Carver County, MN from 2003 and 2011. I used satellite imagery (LANDSAT), aerial photography and an unsupervised classification (ISODATA) of the satellite data to determine land use. Urban land cover had the largest increase indicating an urban sprawl in this county. </p>
-                            <a href="images/UrbanSprawlposter.pdf" class="btn btn-primary" style ="float:right;" target="_blank">Open PDF</a>  
-                            <ul class="modaltext"><u> Tools Used</u> 
-                                <li> ArcMap</li>
-                                <li> ERDAS Imagine</li>
-                                <li> Excel</li>
-                            </ul>
+        <!--Modal 1 -->
+        <div class="modal fade" id="PortModal1" tabindex="-1" role="dialog" aria-labeledby="modalLabel5" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="modalLabel1">Evaluation of Urban Sprawl in Carver County, MN</h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/UrbanSprawlposter.png" alt="" class="img-responsive">
+                        <p class="modaltext"> This poster was created as part of a project in Remote Sensing taken at University of Wisconsin - La Crosse. My project compared the land use of Carver County, MN from 2003 and 2011. I used satellite imagery (LANDSAT), aerial photography and an unsupervised classification (ISODATA) of the satellite data to determine land use. Urban land cover had the largest increase indicating an urban sprawl in this county. </p>
+                        <a href="images/UrbanSprawlposter.pdf" class="btn btn-primary" style="float:right;" target="_blank">Open PDF</a>
+                        <ul class="modaltext"><u> Tools Used</u>
+                            <li> ArcMap</li>
+                            <li> ERDAS Imagine</li>
+                            <li> Excel</li>
+                        </ul>
 
-                        </div> <!--modal body-->
-                        <div class="modal-footer">
-                            <button type="button" data-dismiss="modal" class="btn btn-default">
-                                Close
-                            </button>
-                        </div> <!--modal-footer -->
-                    </div> <!--modal content -->
-                </div> <!--modal-dialog -->
-            </div> <!-- modal class-->
-        </section>  
-        <!--End of Modal 5 -->      
+                    </div>
+                    <!--modal body-->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">
+                            Close
+                        </button>
+                    </div>
+                    <!--modal-footer -->
+                </div>
+                <!--modal content -->
+            </div>
+            <!--modal-dialog -->
+        </div> <!-- modal class-->
 
-        <!-- // Footer -->
-        <footer class="page-footer">
-            <p>Copyright 2018 by Sarah Grandstrand</p>
-        </footer>
+        <!--End of Modal 1 -->
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script> src="js/script.js"</script>
-        <script src="portfolio.js"></script>
+        <!--Modal 9 -->
+        <div class="modal fade" id="PortModal9" tabindex="-1" role="dialog" aria-labeledby="modalLabel5" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="modalLabel9">Suitability Analysis of Wind and Solar Farms in Oregon, USA</h3>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/geog574papercover.png" alt="" class="img-responsive">
+                        <p class="modaltext"> An in-depth study of the best locations to build solar panels and wind turbines throughout Oregon. This was in collaboration with Alex Zarby (Master’s student at UW-Madison) as the final project for a course on database management </p>
+                        <a href="images/GEOG574FinalReport.pdf" class="btn btn-primary" style="float:right;" target="_blank">Open PDF</a>
+                        <ul class="modaltext"><u> Tools Used</u>
+                            <li> PostGIS 2.5.3 </li>
+                            <li> PostgreSQL 11 </li>
+                            <li> ArcGIS Pro 2.2</li>
+                            <li> Model Builder </li>
+                            <li> Illustrator</li>
+                            <li> Excel</li>
+                        </ul>
 
-    </body>
+                    </div>
+                    <!--modal body-->
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-default">
+                            Close
+                        </button>
+                    </div>
+                    <!--modal-footer -->
+                </div>
+                <!--modal content -->
+            </div>
+            <!--modal-dialog -->
+        </div> <!-- modal class-->
+
+        <!--End of Modal 9 -->
+
+    </section> <!-- End of Modals -->
+    <!-- // Footer -->
+    <footer class="page-footer">
+        <p>Copyright 2019 by Sarah Grandstrand</p>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        src = "js/script.js"
+
+    </script>
+    <script src="portfolio.js"></script>
+
+</body>
+
 </html>
-
-
-
-
