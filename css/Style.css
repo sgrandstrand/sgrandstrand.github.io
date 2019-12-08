@@ -169,6 +169,7 @@ footer {
 
 .custom-resume {
     text-align: center;
+    text-shadow: .5px .5px 3px slategray;
 }
 
 .resume-glyph {
@@ -191,4 +192,10 @@ footer {
 
 .firstabout {
     padding-top: 45px;
+}
+
+h3.degree {
+    text-shadow: .3px .3px 1px slategray;
+    font-weight: 800;
+    font-size: 26px;
 }
